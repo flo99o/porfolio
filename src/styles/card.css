@@ -4,11 +4,13 @@
 
 .item {
   transition: transform 500ms;
+  background-color: transparent;
 }
 
 .container .item:focus,
 .container .item:hover {
   transform: scale(1.5);
+
   z-index: 1;
 }
 

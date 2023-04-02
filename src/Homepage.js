@@ -6,9 +6,10 @@ import {
   cardProductList,
   cardProjectIaList,
 } from "./components/data/data";
-import {AiOutlineGithub} from "react-icons/ai"
-import {AiFillLinkedin} from "react-icons/ai"
-
+import { AiOutlineGithub } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
+import {BsFileRichtext} from "react-icons/bs"
+import Typewriter from "typewriter-effect";
 
 export const Homepage = () => {
   return (
@@ -20,16 +21,39 @@ export const Homepage = () => {
         </div>
         <div className="info_container">
           <h3>I'm</h3>
-          <h1>Florence Alonzeau</h1>
-          <div>Product Owner, Développeur Web, Développeur Mobile</div>
+          <h1 className="name_portefolio">Florence Alonzeau</h1>
+          <Typewriter
+            className="titleJobs"
+            options={{
+              strings: [
+                "Product Owner",
+                "Développeur Web",
+                "Développeur Mobile",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
           <div className="doc_container">
-            <a href="/">Download CV</a>
-            <a href="https://www.linkedin.com/in/florence-alonzeau-732b3b193"><AiFillLinkedin/>Linkedin</a>
-            <a href="https://github.com/flo99o"><AiOutlineGithub/>Github</a>
+            <a href="/" className="doc_link">
+            <BsFileRichtext/>
+              Download CV
+            </a>
+            <a
+              href="https://www.linkedin.com/in/florence-alonzeau-732b3b193"
+              className="doc_link"
+            >
+              <AiFillLinkedin />
+              Linkedin
+            </a>
+            <a href="https://github.com/flo99o" className="doc_link">
+              <AiOutlineGithub />
+              Github
+            </a>
           </div>
         </div>
       </div>
-      <h1>Mes Projets</h1>
+      <h1 style={{ textAlign: "center", fontSize: "2rem" }}>Mes Projets</h1>
       <div className="project_container">
         <h2>Product Owner projects</h2>
         <div className="product_owner" style={{ display: "flex" }}>
@@ -44,9 +68,9 @@ export const Homepage = () => {
           ))}
         </div>
         <h2>Projet IA</h2>
-        <div className="projet_ia" style={{display:"flex"}}>
-          {cardProjectIaList.map((project)=>(
-            <Card key={project.id} project={project}/>
+        <div className="projet_ia" style={{ display: "flex" }}>
+          {cardProjectIaList.map((project) => (
+            <Card key={project.id} project={project} />
           ))}
         </div>
       </div>
