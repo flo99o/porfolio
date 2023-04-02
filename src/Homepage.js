@@ -8,7 +8,7 @@ import {
 } from "./components/data/data";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
-import {BsFileRichtext} from "react-icons/bs"
+import { BsFileRichtext } from "react-icons/bs";
 import Typewriter from "typewriter-effect";
 
 export const Homepage = () => {
@@ -36,7 +36,7 @@ export const Homepage = () => {
           />
           <div className="doc_container">
             <a href="/" className="doc_link">
-            <BsFileRichtext/>
+              <BsFileRichtext />
               Download CV
             </a>
             <a
@@ -54,6 +54,14 @@ export const Homepage = () => {
         </div>
       </div>
       <h1 style={{ textAlign: "center", fontSize: "2rem" }}>Mes Projets</h1>
+      <p>
+        En tant que Product Owner / Developer avec une expérience dans le //
+        développement de logiciels et une forte concentration sur la création //
+        de produits innovants. Tout au long de ma carrière, j'ai eu l'occasion
+        de travailler sur divers projets de développement de logiciels, en //
+        collaborant avec des équipes interfonctionnelles pour livrer de produits
+        qui répondent aux besoins des clients.
+      </p>
       <div className="project_container">
         <h2>Product Owner projects</h2>
         <div className="product_owner" style={{ display: "flex" }}>
@@ -72,6 +80,10 @@ export const Homepage = () => {
           {cardProjectIaList.map((project) => (
             <Card key={project.id} project={project} />
           ))}
+        </div>
+        <div className="skills_container">
+          <h1 className="skillsTitle">Skills</h1>
+          <h1 className="miniSkillsTitle">My Skills</h1>
         </div>
       </div>
     </div>
