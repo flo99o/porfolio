@@ -1,0 +1,38 @@
+.white_head {
+  background-color: whitesmoke;
+  padding: 60px;
+ 
+}
+
+.header_container {
+  padding: 20px;
+  display: flex;
+  background-color: #426260;
+  color: white;
+  height: 76vh;
+}
+.info_container{
+  margin-left: 100px;
+}
+
+h1 {
+  color: white;
+}
+.doc_container{
+  margin-top: 200px;
+}
+a{
+  background-color: whitesmoke;
+  color: black;
+  padding: 14px 16px;
+  margin: 10px;
+}
+
+.img_profil {
+  width: 500px;
+  height: 350px;
+  border-radius: 50%;
+  padding: 10px;
+
+}
+
