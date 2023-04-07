@@ -35,25 +35,30 @@ export const Homepage = () => {
             }}
           />
           <div className="doc_container">
-            <a href="/" className="doc_link">
+            <a href="/" className="doc_link" target="_blank">
               <BsFileRichtext />
               Download CV
             </a>
             <a
               href="https://www.linkedin.com/in/florence-alonzeau-732b3b193"
               className="doc_link"
+              target="_blank"
             >
               <AiFillLinkedin />
               Linkedin
             </a>
-            <a href="https://github.com/flo99o" className="doc_link">
+            <a
+              href="https://github.com/flo99o"
+              className="doc_link"
+              target="_blank"
+            >
               <AiOutlineGithub />
               Github
             </a>
           </div>
         </div>
       </div>
-      <h1 style={{ textAlign: "center", fontSize: "2rem" }}>Mes Projets</h1>
+      <h1 className="my_project">Mes Projets</h1>
       <p>
         En tant que Product Owner / Developer avec une expérience dans le //
         développement de logiciels et une forte concentration sur la création //

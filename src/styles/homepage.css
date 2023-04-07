@@ -1,13 +1,13 @@
 .white_head {
   background-color: whitesmoke;
-  padding: 60px;
+  padding: 50px;
 }
 
 .header_container {
   display: flex;
   background-color: #426260;
   color: white;
-  height: 70vh;
+  height: 73vh;
 }
 .info_container {
   margin-left: 150px;
@@ -33,7 +33,7 @@ h3 {
 }
 
 .doc_container {
-  margin-top: 200px;
+  margin: 100px;
 }
 
 .doc_link {
@@ -50,15 +50,28 @@ a {
 
 .img_profil {
   width: 500px;
-  height: 350px;
+  height: 500px;
   border-radius: 50%;
   padding: 40px;
+  object-fit: cover;
+}
+.my_project {
+  -webkit-text-stroke: 1px black;
+  text-transform: uppercase;
+  font-size: calc(2.125rem + 3.5vw);
+  color: transparent;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+}
+
+.skills_container {
+  position: relative;
 }
 
 .skillsTitle {
-  -webkit-text-stroke: 1px black;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
   text-transform: uppercase;
-  font-size: calc(2.125rem + 6.5vw);
+  font-size: calc(2.125rem + 3.5vw);
   color: transparent;
   font-family: Roboto, sans-serif;
   text-align: center;
@@ -68,4 +81,13 @@ a {
   text-transform: uppercase;
   color: #426260;
   line-height: 1.2;
+}
+
+.miniSkillsTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  margin: 0;
+  color: #426260;
 }
