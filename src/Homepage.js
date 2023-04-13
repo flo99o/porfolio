@@ -9,6 +9,17 @@ import {
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsFileRichtext } from "react-icons/bs";
+import { SiJavascript } from "react-icons/si";
+import { SiCss3 } from "react-icons/si";
+import { TbBrandKotlin } from "react-icons/tb";
+import { GrReactjs } from "react-icons/gr";
+import { FaPython } from "react-icons/fa";
+import { SiMicrosoftoffice } from "react-icons/si";
+import { BiPodcast } from "react-icons/bi";
+import { SiFigma } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
+import { FaGit } from "react-icons/fa";
+import { SiNestjs } from "react-icons/si";
 import Typewriter from "typewriter-effect";
 
 export const Homepage = () => {
@@ -58,12 +69,14 @@ export const Homepage = () => {
           </div>
         </div>
       </div>
-      <h1 className="my_project">Mes Projets</h1>
+      <div className="project_title_container">
+        <h1 className="my_project">Projets</h1>
+        <h1 className="minimy_project"> PROJETS</h1>
+      </div>
+
       <p>
-        En tant que Product Owner / Developer avec une expérience dans le //
-        développement de logiciels et une forte concentration sur la création //
-        de produits innovants. Tout au long de ma carrière, j'ai eu l'occasion
-        de travailler sur divers projets de développement de logiciels, en //
+        En tant que Product Owner avec une expérience dans le développement web
+        et logiciel j'ai eu l'occasion de travailler sur divers projets en
         collaborant avec des équipes interfonctionnelles pour livrer de produits
         qui répondent aux besoins des clients.
       </p>
@@ -88,16 +101,23 @@ export const Homepage = () => {
         </div>
         <div className="skills_container">
           <h1 className="skillsTitle">Skills</h1>
-          <h1 className="miniSkillsTitle">My Skills</h1>
+          <h1 className="miniSkillsTitle">SKILLS</h1>
+        </div>
+        <div className="icons_container">
+          <SiJavascript size={60} />
+          <SiCss3 size={60} />
+          <p>ZenHub</p>
+          <TbBrandKotlin size={60} />
+          <GrReactjs size={60} />
+          <FaPython size={60} />
+          <SiMicrosoftoffice size={60} />
+          <BiPodcast size={60} />
+          <SiFigma size={60} />
+          <FaGit size={60} />
+          <FaGithub size={60} />
+          <SiNestjs size={60} />
         </div>
       </div>
     </div>
   );
 };
-
-// En tant que Product Owner / Developer avec une expérience dans le
-//           développement de logiciels et une forte concentration sur la création
-//           de produits innovants. Tout au long de ma carrière, j'ai eu l'occasion
-//           de travailler sur divers projets de développement de logiciels, en
-//           collaborant avec des équipes interfonctionnelles pour livrer des
-//           produits qui répondent aux besoins des clients.

@@ -10,18 +10,16 @@
 .container .item:focus,
 .container .item:hover {
   transform: scale(1.5);
-
   z-index: 1;
 }
 
-.img_card{
+.img_card {
   width: 200px;
   height: 200px;
 }
 .item img {
   max-width: 100%;
-
 }
-h2{
+h2 {
   padding: 20px;
 }
