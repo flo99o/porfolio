@@ -1,11 +1,12 @@
 import "./styles/homepage.css";
-import princess from "./assets/princess.jpg";
+import profilpic from "./assets/profilpic.jpg";
 import { Card } from "./components/Card";
 import {
   cardDeveloperList,
   cardProductList,
   cardProjectIaList,
 } from "./components/data/data";
+import { saveAs } from 'file-saver';
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsFileRichtext } from "react-icons/bs";
@@ -23,12 +24,14 @@ import { SiNestjs } from "react-icons/si";
 import Typewriter from "typewriter-effect";
 
 export const Homepage = () => {
+
+
   return (
     <div className="homepage_container">
       <div className="white_head"></div>
       <div className="header_container">
         <div className="img_container">
-          <img className="img_profil" src={princess} alt="" />
+          <img className="img_profil" src={profilpic} alt="" />
         </div>
         <div className="info_container">
           <h3>I'm</h3>
@@ -46,26 +49,27 @@ export const Homepage = () => {
             }}
           />
           <div className="doc_container">
-            <a href="/" className="doc_link" target="_blank">
+            <button href="" className="doc_link" target="_blank">
               <BsFileRichtext />
+
               Download CV
-            </a>
-            <a
+            </button>
+            <button
               href="https://www.linkedin.com/in/florence-alonzeau-732b3b193"
               className="doc_link"
               target="_blank"
             >
               <AiFillLinkedin />
               Linkedin
-            </a>
-            <a
+            </button>
+            <button
               href="https://github.com/flo99o"
               className="doc_link"
               target="_blank"
             >
               <AiOutlineGithub />
               Github
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -117,6 +121,9 @@ export const Homepage = () => {
           <FaGithub size={60} />
           <SiNestjs size={60} />
         </div>
+      </div>
+      <div className="footer">
+        <p>mention légal</p>
       </div>
     </div>
   );
