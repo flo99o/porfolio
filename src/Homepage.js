@@ -6,7 +6,7 @@ import {
   cardProductList,
   cardProjectIaList,
 } from "./components/data/data";
-import { saveAs } from 'file-saver';
+import { saveAs } from "file-saver";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsFileRichtext } from "react-icons/bs";
@@ -22,10 +22,12 @@ import { FaGithub } from "react-icons/fa";
 import { FaGit } from "react-icons/fa";
 import { SiNestjs } from "react-icons/si";
 import Typewriter from "typewriter-effect";
+import FileSaver from "file-saver";
 
 export const Homepage = () => {
-
-
+  const onSave = () => {
+    FileSaver.saveAs("/logo192.png", "test.png");
+  };
   return (
     <div className="homepage_container">
       <div className="white_head"></div>
@@ -49,27 +51,32 @@ export const Homepage = () => {
             }}
           />
           <div className="doc_container">
-            <button href="" className="doc_link" target="_blank">
+            <a
+              // href="http://www.snut.fr/wp-content/uploads/2015/08/image-de-paysage.jpg"
+              onClick={onSave}
+              className="doc_link"
+              // target="_blank"
+              download
+            >
               <BsFileRichtext />
-
               Download CV
-            </button>
-            <button
+            </a>
+            <a
               href="https://www.linkedin.com/in/florence-alonzeau-732b3b193"
               className="doc_link"
               target="_blank"
             >
               <AiFillLinkedin />
               Linkedin
-            </button>
-            <button
+            </a>
+            <a
               href="https://github.com/flo99o"
               className="doc_link"
               target="_blank"
             >
               <AiOutlineGithub />
               Github
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -80,9 +87,9 @@ export const Homepage = () => {
 
       <p>
         En tant que Product Owner avec une expérience dans le développement web
-        et logiciel j'ai eu l'occasion de travailler sur divers projets en
-        collaborant avec des équipes interfonctionnelles pour livrer de produits
-        qui répondent aux besoins des clients.
+        et logiciel, j'ai eu l'occasion de travailler sur divers projets en
+        collaborant avec des équipes pluridisciplinaires pour livrer des
+        produits qui répondent aux besoins des clients.
       </p>
       <div className="project_container">
         <h2>Product Owner projects</h2>
@@ -121,9 +128,6 @@ export const Homepage = () => {
           <FaGithub size={60} />
           <SiNestjs size={60} />
         </div>
-      </div>
-      <div className="footer">
-        <p>mention légal</p>
       </div>
     </div>
   );

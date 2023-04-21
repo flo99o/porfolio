@@ -39,6 +39,8 @@ h3 {
 
 .doc_container {
   padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .doc_link {
@@ -46,14 +48,15 @@ h3 {
   color: whitesmoke;
 }
 
-button {
-  display: inline;
+a {
+  display: block;
   background-color: whitesmoke;
   color: black;
   padding: 15px 40px;
   margin: 5px;
   border-radius: 12px;
   border: none;
+  white-space: nowrap;
 }
 
 .img_profil {
@@ -126,14 +129,20 @@ button {
   justify-content: center;
   gap: 20px;
 }
-p {
-  text-align: center;
-  margin: 30px;
+
+.footer {
+  background-color: #426260;
+  bottom: 0;
+  position: sticky;
 }
-footer{
-  background-color:#426260 ;
-  height: 20px;
+.project_container{
+  margin-bottom: 100px;
 }
+.devweb_mobile{
+  overflow-x: auto;
+  overflow-y: visible;
+}
+
 /* Media queries for responsive design */
 @media only screen and (max-width: 1200px) {
   .header_container {
