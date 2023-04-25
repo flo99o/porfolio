@@ -68,7 +68,7 @@ a {
   height: 500px;
   border-radius: 50%;
   padding: 40px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .my_project {
