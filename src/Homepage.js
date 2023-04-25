@@ -104,12 +104,12 @@ export const Homepage = () => {
             <Card key={project} project={project} />
           ))}
         </div>
-        <h2>Projet IA</h2>
+        {/* <h2>Projet IA</h2>
         <div className="projet_ia" style={{ display: "flex" }}>
           {cardProjectIaList.map((project) => (
             <Card key={project.id} project={project} />
           ))}
-        </div>
+        </div> */}
         <div className="skills_container">
           <h1 className="skillsTitle">Skills</h1>
           <h1 className="miniSkillsTitle">SKILLS</h1>
