@@ -14,6 +14,10 @@
   margin-left: 150px;
 }
 
+p{
+  padding: 10px;
+}
+
 .name_portefolio {
   -webkit-text-stroke: 2px whitesmoke;
   color: transparent;

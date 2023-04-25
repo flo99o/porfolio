@@ -24,3 +24,5 @@ yarn-error.log*
 
 #files
 ../src/assets
+# Local Netlify folder
+.netlify

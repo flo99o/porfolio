@@ -5,7 +5,7 @@ export const Card = ({ project }) => {
 
   return (
     <div className="container">
-      <a href={project.lien} className="item" target="_blank">
+      <a href={project.lien} className="item" target="_blank" rel="noreferrer">
         <img src={project.img} alt="podcast" className="img_card" />
       </a>
     </div>

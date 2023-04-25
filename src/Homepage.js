@@ -1,12 +1,11 @@
 import "./styles/homepage.css";
-import profilpic from "./assets/profilpic.jpg";
+import profilpic from "./assets/profilpic.jpg"
 import { Card } from "./components/Card";
 import {
   cardDeveloperList,
   cardProductList,
-  cardProjectIaList,
+  // cardProjectIaList,
 } from "./components/data/data";
-import { saveAs } from "file-saver";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
 import { BsFileRichtext } from "react-icons/bs";
@@ -26,7 +25,7 @@ import FileSaver from "file-saver";
 
 export const Homepage = () => {
   const onSave = () => {
-    FileSaver.saveAs("/logo192.png", "test.png");
+    FileSaver.saveAs("/cvflo.pdf", "cv.png");
   };
   return (
     <div className="homepage_container">
@@ -51,13 +50,7 @@ export const Homepage = () => {
             }}
           />
           <div className="doc_container">
-            <a
-              // href="http://www.snut.fr/wp-content/uploads/2015/08/image-de-paysage.jpg"
-              onClick={onSave}
-              className="doc_link"
-              // target="_blank"
-              download
-            >
+            <a onClick={onSave} className="doc_link" download>
               <BsFileRichtext />
               Download CV
             </a>
@@ -65,6 +58,7 @@ export const Homepage = () => {
               href="https://www.linkedin.com/in/florence-alonzeau-732b3b193"
               className="doc_link"
               target="_blank"
+              rel="noreferrer"
             >
               <AiFillLinkedin />
               Linkedin
@@ -73,6 +67,7 @@ export const Homepage = () => {
               href="https://github.com/flo99o"
               className="doc_link"
               target="_blank"
+              rel="noreferrer"
             >
               <AiOutlineGithub />
               Github
