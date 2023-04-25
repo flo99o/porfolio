@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81ed8968.css",
-    "main.js": "/static/js/main.a5986000.js",
+    "main.js": "/static/js/main.6d5f1143.js",
     "static/js/787.34099e4b.chunk.js": "/static/js/787.34099e4b.chunk.js",
     "static/media/axem.jpg": "/static/media/axem.cd6af7a21eacb09dc45a.jpg",
     "static/media/podcast.png": "/static/media/podcast.bc87f99ef8bb2effaf4f.png",
@@ -9,11 +9,11 @@
     "static/media/afrobiz.jpg": "/static/media/afrobiz.71299d1686bf5c26e93e.jpg",
     "index.html": "/index.html",
     "main.81ed8968.css.map": "/static/css/main.81ed8968.css.map",
-    "main.a5986000.js.map": "/static/js/main.a5986000.js.map",
+    "main.6d5f1143.js.map": "/static/js/main.6d5f1143.js.map",
     "787.34099e4b.chunk.js.map": "/static/js/787.34099e4b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81ed8968.css",
-    "static/js/main.a5986000.js"
+    "static/js/main.6d5f1143.js"
   ]
 }
