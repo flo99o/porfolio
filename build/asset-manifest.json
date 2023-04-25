@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.81ed8968.css",
-    "main.js": "/static/js/main.6d5f1143.js",
+    "main.css": "/static/css/main.e6dfdc85.css",
+    "main.js": "/static/js/main.de9cd733.js",
     "static/js/787.34099e4b.chunk.js": "/static/js/787.34099e4b.chunk.js",
     "static/media/axem.jpg": "/static/media/axem.cd6af7a21eacb09dc45a.jpg",
     "static/media/podcast.png": "/static/media/podcast.bc87f99ef8bb2effaf4f.png",
     "static/media/profilpic.jpg": "/static/media/profilpic.32be907ba52854aee626.jpg",
     "static/media/afrobiz.jpg": "/static/media/afrobiz.71299d1686bf5c26e93e.jpg",
     "index.html": "/index.html",
-    "main.81ed8968.css.map": "/static/css/main.81ed8968.css.map",
-    "main.6d5f1143.js.map": "/static/js/main.6d5f1143.js.map",
+    "main.e6dfdc85.css.map": "/static/css/main.e6dfdc85.css.map",
+    "main.de9cd733.js.map": "/static/js/main.de9cd733.js.map",
     "787.34099e4b.chunk.js.map": "/static/js/787.34099e4b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81ed8968.css",
-    "static/js/main.6d5f1143.js"
+    "static/css/main.e6dfdc85.css",
+    "static/js/main.de9cd733.js"
   ]
 }
