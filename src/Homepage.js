@@ -1,5 +1,5 @@
 import "./styles/homepage.css";
-import profilpic from "./assets/profilpic.jpg"
+import profilpic from "./assets/profilpic.jpg";
 import { Card } from "./components/Card";
 import {
   cardDeveloperList,
@@ -20,6 +20,7 @@ import { SiFigma } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { FaGit } from "react-icons/fa";
 import { SiNestjs } from "react-icons/si";
+import {MdOutlineWhatsapp}from "react-icons/md"
 import Typewriter from "typewriter-effect";
 import FileSaver from "file-saver";
 
@@ -50,7 +51,12 @@ export const Homepage = () => {
             }}
           />
           <div className="doc_container">
-            <a onClick={onSave} className="doc_link" download>
+            <a
+              onClick={onSave}
+              className="doc_link"
+              download
+              style={{ cursor: "pointer" }}
+            >
               <BsFileRichtext />
               Download CV
             </a>
@@ -72,6 +78,14 @@ export const Homepage = () => {
               <AiOutlineGithub />
               Github
             </a>
+            <a
+             href="https://api.whatsapp.com/send?phone=%2B33698338009&text&app_absent=0"
+             className="doc_whatsapp"
+            >
+              <MdOutlineWhatsapp/>
+              Whatsapp
+            </a>
+      
           </div>
         </div>
       </div>
