@@ -26,7 +26,7 @@ import FileSaver from "file-saver";
 
 export const Homepage = () => {
   const onSave = () => {
-    FileSaver.saveAs("/cvflo.pdf", "cv.png");
+    FileSaver.saveAs("/cvdev.pdf", "cv.png");
   };
   return (
     <div className="homepage_container">
