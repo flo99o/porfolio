@@ -39,7 +39,7 @@ export const cardDeveloperList = [
   {
     id: 6,
     img: terra,
-    lien: "",
+    lien: "https://www.instagram.com/terrafrofficiel/",
   },
 ];
 
