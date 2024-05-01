@@ -3,6 +3,7 @@ import bemum from "../../assets/bemum.png";
 import afrobiz from "../../assets/afrobiz.jpg"
 import axem from "../../assets/axem.jpg"
 import terra from "../../assets/terra.jpg"
+import foodtruck from "../../assets/foodtruck.png"
 
 
 
@@ -40,6 +41,11 @@ export const cardDeveloperList = [
     id: 6,
     img: terra,
     lien: "https://www.instagram.com/terrafrofficiel/",
+  },
+  {
+    id: 7,
+    img: foodtruck ,
+    lien: "https://ramenmoi77.com/",
   },
 ];
 
