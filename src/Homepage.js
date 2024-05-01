@@ -42,9 +42,9 @@ export const Homepage = () => {
             className="titleJobs"
             options={{
               strings: [
+                "Devops Engineer",
+                "Software Developper",
                 "Product Owner",
-                "Développeur Web",
-                "Développeur Mobile",
               ],
               autoStart: true,
               loop: true,
