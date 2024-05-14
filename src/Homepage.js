@@ -20,7 +20,7 @@ import { SiFigma } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { FaGit } from "react-icons/fa";
 import { SiNestjs } from "react-icons/si";
-import {MdOutlineWhatsapp}from "react-icons/md"
+import { MdOutlineWhatsapp } from "react-icons/md";
 import Typewriter from "typewriter-effect";
 import FileSaver from "file-saver";
 
@@ -79,13 +79,12 @@ export const Homepage = () => {
               Github
             </a>
             <a
-             href="https://api.whatsapp.com/send?phone=%2B33698338009&text&app_absent=0"
-             className="doc_whatsapp"
+              href="https://api.whatsapp.com/send?phone=%2B33698338009&text&app_absent=0"
+              className="doc_whatsapp"
             >
-              <MdOutlineWhatsapp/>
+              <MdOutlineWhatsapp />
               Whatsapp
             </a>
-      
           </div>
         </div>
       </div>
@@ -95,10 +94,14 @@ export const Homepage = () => {
       </div>
 
       <p>
-        En tant que Product Owner avec une expérience dans le développement web
-        et logiciel, j'ai eu l'occasion de travailler sur divers projets en
-        collaborant avec des équipes pluridisciplinaires pour livrer des
-        produits qui répondent aux besoins des clients.
+        Diplômée d'Epitech en tant qu'architecte logiciel, je possède une solide
+        expérience en tant que développeur web, Technical Product Owner et
+        DevOps. Mon parcours académique et professionnel m'a permis de
+        développer une expertise approfondie dans la conception et la mise en
+        œuvre de solutions logicielles robustes et innovantes. Fort de plusieurs
+        années d'expérience, j'ai eu l'opportunité de travailler sur divers
+        projets complexes, allant de la création de sites web performants à la
+        gestion de produits techniques sophistiqués. 
       </p>
       <div className="project_container">
         <h2>Product Owner projects</h2>
