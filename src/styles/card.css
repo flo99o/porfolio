@@ -1,27 +1,47 @@
-.container {
+.card_container {
   display: flex;
+ 
 }
 
 .item {
   transition: transform 500ms;
   background-color: transparent;
+  margin: 10px; /* Ajoute de l'espace autour des items */
+  box-sizing: border-box;
 }
 
-.container .item:focus,
-.container .item:hover {
+.card_container .item:focus,
+.card_container .item:hover {
   transform: scale(1.5);
-  
   z-index: 1;
 }
 
 .img_card {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
+  
 }
 .item img {
   max-width: 100%;
 }
 h2 {
   padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .item {
+    flex: 1 1 calc(100% - 20px); /* S'adapte à 100% de la largeur moins l'espace du gap */
+  }
+
+  .img_card {
+    width: 100%; /* S'adapte à la taille du conteneur parent */
+
+  }
+  .card_container .item:focus,
+  .card_container .item:hover {
+    transform: none; /* Désactive les transformations */
+  }
+
+  
 }

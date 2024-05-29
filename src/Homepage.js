@@ -4,7 +4,7 @@ import { Card } from "./components/Card";
 import {
   cardDeveloperList,
   cardProductList,
-  // cardProjectIaList,
+  cardSideProjects,
 } from "./components/data/data";
 import { AiOutlineGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -42,9 +42,9 @@ export const Homepage = () => {
             className="titleJobs"
             options={{
               strings: [
-                "Devops Engineer",
-                "Software Developper",
-                "Product Owner",
+                "Développeur web ",
+                "Développeur mobile",
+                "Technical Product Owner",
               ],
               autoStart: true,
               loop: true,
@@ -88,6 +88,7 @@ export const Homepage = () => {
           </div>
         </div>
       </div>
+
       <div className="project_title_container">
         <h1 className="my_project">Projets</h1>
         <h1 className="minimy_project"> PROJETS</h1>
@@ -95,51 +96,53 @@ export const Homepage = () => {
 
       <p>
         Diplômée d'Epitech en tant qu'architecte logiciel, je possède une solide
-        expérience en tant que développeur web, Technical Product Owner et
-        DevOps. Mon parcours académique et professionnel m'a permis de
-        développer une expertise approfondie dans la conception et la mise en
-        œuvre de solutions logicielles robustes et innovantes. Fort de plusieurs
-        années d'expérience, j'ai eu l'opportunité de travailler sur divers
-        projets complexes, allant de la création de sites web performants à la
-        gestion de produits techniques sophistiqués. 
+        expérience en tant que développeur web, Technical Product Owner et les
+        mises en pratiques DevOps. Mon parcours académique et professionnel m'a
+        permis de développer une expertise approfondie dans la conception et la
+        mise en œuvre de solutions logicielles robustes et innovantes. Fort de
+        plusieurs années d'expérience, j'ai eu l'opportunité de travailler sur
+        divers projets complexes, allant de la création de sites web performants
+        à la gestion de produits techniques sophistiqués.
       </p>
       <div className="project_container">
         <h2>Product Owner projects</h2>
-        <div className="product_owner" style={{ display: "flex" }}>
+        <div className="product_row">
           {cardProductList.map((project) => (
             <Card key={project.id} project={project} />
           ))}
         </div>
-        <h2>Développeur web / Mobile</h2>
-        <div className="devweb_mobile" style={{ display: "flex" }}>
+
+        <h2>Développeur Web / Mobile</h2>
+        <div className="web_project">
           {cardDeveloperList.map((project) => (
             <Card key={project} project={project} />
           ))}
         </div>
-        {/* <h2>Projet IA</h2>
-        <div className="projet_ia" style={{ display: "flex" }}>
-          {cardProjectIaList.map((project) => (
-            <Card key={project.id} project={project} />
+
+        <h2>Sides projects</h2>
+        <div className="side_project">
+          {cardSideProjects.map((project) => (
+            <Card key={project} project={project} />
           ))}
-        </div> */}
-        <div className="skills_container">
-          <h1 className="skillsTitle">Skills</h1>
-          <h1 className="miniSkillsTitle">SKILLS</h1>
         </div>
-        <div className="icons_container">
-          <SiJavascript size={60} />
-          <SiCss3 size={60} />
-          <p>ZenHub</p>
-          <TbBrandKotlin size={60} />
-          <GrReactjs size={60} />
-          <FaPython size={60} />
-          <SiMicrosoftoffice size={60} />
-          <BiPodcast size={60} />
-          <SiFigma size={60} />
-          <FaGit size={60} />
-          <FaGithub size={60} />
-          <SiNestjs size={60} />
-        </div>
+      </div>
+      <div className="skills_container">
+        <h1 className="skillsTitle">Skills</h1>
+        <h1 className="miniSkillsTitle">SKILLS</h1>
+      </div>
+      <div className="icons_container">
+        <SiJavascript size={60} />
+        <SiCss3 size={60} />
+        <p>ZenHub</p>
+        <TbBrandKotlin size={60} />
+        <GrReactjs size={60} />
+        <FaPython size={60} />
+        <SiMicrosoftoffice size={60} />
+        <BiPodcast size={60} />
+        <SiFigma size={60} />
+        <FaGit size={60} />
+        <FaGithub size={60} />
+        <SiNestjs size={60} />
       </div>
     </div>
   );

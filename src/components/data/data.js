@@ -4,6 +4,10 @@ import afrobiz from "../../assets/afrobiz.jpg"
 import axem from "../../assets/axem.jpg"
 import terra from "../../assets/terra.jpg"
 import foodtruck from "../../assets/foodtruck.png"
+import scrapping from "../../assets/scrapping.jpg"
+import crypto from "../../assets/crypto.jpg"
+import nextjs from "../../assets/nextjs.png"
+
 
 
 
@@ -49,11 +53,20 @@ export const cardDeveloperList = [
   },
 ];
 
-export const cardProjectIaList=[
+export const cardSideProjects=[
     {
-
+      id: 8,
+      img: scrapping,
+      lien: "https://github.com/flo99o/script-scrapping",
     },
     {
-
+      id: 9,
+      img: crypto,
+      lien: "https://github.com/flo99o/First-Blockchain-App",
+    },
+    {
+      id: 10,
+      img: nextjs,
+      lien: "https://github.com/flo99o/yla.git",
     },
 ]
