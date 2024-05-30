@@ -44,7 +44,7 @@ export const cardDeveloperList = [
   {
     id: 6,
     img: terra,
-    lien: "https://www.instagram.com/terrafrofficiel/",
+    lien: "https://github.com/flo99o/Terra-api",
   },
   {
     id: 7,
